@@ -1,5 +1,4 @@
 import React from "react";
-import BgImage from "./bg-image.png";
 import Image from "next/image";
 import Logo from "./cc-10.png";
 import AppleStore from "./apple.png";
@@ -7,7 +6,11 @@ import PlayStore from "./android.png";
 
 const HeroSection = () => {
   return (
-    <div className={"container bg-black mx-auto py-10 px-5"}>
+    <div
+      className={
+        "container max-w-[1200px] bg-black mx-auto py-10 px-5  md:bg-[url('/bg-image.png')] bg-[length:400px] lg:bg-[length:500px] xl:bg-[length:600px] bg-no-repeat bg-right-top"
+      }
+    >
       <div className={"w-full md:w-2/3 lg:w-1/2"}>
         <Image
           src={Logo}
